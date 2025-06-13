@@ -1,0 +1,33 @@
+\documentclass[12pt,conference,onecolumn]{IEEEtran}
+
+\title{Automated beach cleaning robot}
+\author{%
+\IEEEauthorblockN{Srikar Baru}\IEEEauthorblockA{Science \& Engineering\\Manalapan High School\\Englishtown, NJ\\425sbaru@frhsd.com}\and 
+\IEEEauthorblockN{Kevin Tomazic}\IEEEauthorblockA{Science \& Engineering\\Manalapan High School\\Englishtown, NJ\\425ktomazic@frhsd.com}}
+\date{January 28, 2025}
+
+\newcommand{\keywords}{robotics, beach, machine vision, environmental remediation, Raspberry Pi, Arduino, servo, h-bridge}
+
+\usepackage{hyperref}
+\makeatletter
+\AtBeginDocument{
+\hypersetup{%
+pdftitle={\@title},
+pdfauthor={Srikar Baru and Kevin Tomazic},
+pdfkeywords={\keywords}}}
+\makeatother
+
+\usepackage{siunitx}
+
+\begin{document}
+\maketitle 
+
+\begin{abstract}
+In order to reduce the need for manual cleaning of beaches, we created an automated beach cleaning robot. To do this we used a machine learning algorithm to detect trash along the shore and an arm to collect the trash. This model was uploaded onto a Raspberry Pi 5. We also used two Arduinos, one to control the movement of the body and one to control the movement of the arm. The arm used servo motors to control the position of the four segments which we 3D printed. We used the Servo.h library in the Arduino to be able to control the motors. Connected to the second Arduino were the motors and ultrasonic sensors. We used four DC motors and treads for the movement of the beach cleaner that were connected to the L293D H-Bridge chip to allow control of forward and backwards motion. We had three ultrasonic sensors that are used to detect objects \qty{1}{\meter} in front. The two Arduinos were connected to the Raspberry Pi, which would give them the information about stopping as well as how far away the trash is for the arm. This information is transferred via the serial port which can be shared by USB connection between the two. In order to determine where to move each segment of the arm we used inverse kinematics which is the process of knowing the end position and calculating the needed angles of the joints. To power everything, we used a \qty{12}{\volt} lithium battery. For the body of the beach cleaner we constructed it out of PVC pipes and plywood to make it light and easy to transport.
+\end{abstract}
+
+\begin{IEEEkeywords}
+\keywords
+\end{IEEEkeywords}
+
+\end{document}

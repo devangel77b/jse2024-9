@@ -1,0 +1,42 @@
+﻿\documentclass[12pt,conference,onecolumn]{IEEEtran}
+
+\makeatletter % changes the catcode of @ to 11
+\newcommand{\linebreakand}{%
+  \end{@IEEEauthorhalign}
+  \hfill\mbox{}\par
+  \mbox{}\hfill\begin{@IEEEauthorhalign}
+}
+\makeatother % changes the catcode of @ back to 12
+
+\title{Evaluation of DW-MRI neuroimaging data and its application in analyzing the motor outcomes of patients after ischemic stroke at Rutgers NeuREI Lab}
+\author{\IEEEauthorblockN{Danyal Ahmad}\IEEEauthorblockA{Science \& Engineering\\Manalapan High School\\Englishtown, NJ\\425dahmad@frhsd.com}\and 
+\IEEEauthorblockN{Jennifer Gutterman}\IEEEauthorblockA{Dept of Rehabilitation \& Movement Science\\Rutgers University\\Newark, NJ\\jeg201@shp.rutgers.edu}\and \linebreakand
+\IEEEauthorblockN{Soha Saleh}\IEEEauthorblockA{Dept of Rehabilitation \& Movement Sciences\\Rutgers University\\Newark, NJ\\salehsh@shp.rutgers.edu}
+}
+\date{January 28, 2025}
+\newcommand{\keywords}{diffusion-weighted magnetic resonance imaging, MRI, categorized database, literature review, internship, stroke, motor outcome}
+
+\usepackage{hyperref}
+\makeatletter
+\AtBeginDocument{
+\hypersetup{%
+pdftitle={\@title},
+pdfauthor={Danyal Ahmad, Jennifer Gutterman, and Soha Saleh},
+pdfkeywords={\keywords}}}
+\makeatother
+
+\begin{document}
+\maketitle 
+%\thispagestyle{empty}
+
+\begin{abstract}
+The Neurophysiology and Rehabilitation Innovations Lab (NeuREI Lab) at Rutgers School of Health Professions, in collaboration with New Jersey Medical School, aims to enhance the lives of individuals with motor and cognitive disabilities through innovative research in neurophysiology. Led by Dr. Soha Saleh, the lab focuses on using neuroimaging to understand how brain imaging can predict motor recovery in patients who have suffered ischemic strokes. One of the methodologies employed by the lab is diffusion-weighted Magnetic Resonance Imaging (DW-MRI), a non-invasive imaging technique that tracks the movement of water molecules in brain tissues. This approach enables researchers to examine critical neural pathways involved in motor control, such as the corticospinal and reticulospinal tracts.
+
+As a research intern under Dr. Jennifer Gutterman, I developed a categorized database of 57 studies exploring the relationship between DW-MRI methods and motor outcomes in stroke patients. This work examined how changes in specific brain pathways correlate with patients' motor abilities and supports a literature review authored by Dr. Gutterman. Currently, I am collaborating with Mr. Michael Glassen to assess clinical data from the lab, focusing on the evaluation of motor conditions in patients. Both my prior work creating a database of studies and my current project analyzing patient data align with the NeuREI Lab's goals of leveraging neuroimaging to predict motor recovery. Together, these efforts contribute to advancing research methodologies and providing insights for improving rehabilitation outcomes in individuals affected by ischemic strokes.
+\end{abstract}
+
+\begin{IEEEkeywords}
+\keywords
+\end{IEEEkeywords}
+
+\end{document}
