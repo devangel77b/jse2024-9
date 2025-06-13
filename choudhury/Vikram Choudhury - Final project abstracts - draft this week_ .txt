@@ -1,0 +1,7 @@
+﻿Prosthetic Arm Project
+
+
+Vikram Choudhury
+
+
+I prototyped an inexpensive prosthetic arm that is able to be controlled in a straightforward manner using Electroencephalography(EEG), which is a method to measure electrical activity in the brain. EEG signals contain information related to motor function as well as information related to other actions that the brain is responsible for. As motor function signals are predominantly found in the 12 to 100 Hz range, I applied a digital filter to the EEG signal, using a Fourier transform that ignores all parts of the signal outside of the 12 to 100 Hz range. EEG signals are also very sensitive to noise, disruptions to a signal, caused by motor function of head muscles. For two electrodes in close proximity, the noise induced by the motor function of head muscles would be similar, so  I used an instrumentation amplifier, a type of amplifier that subtracts two input signals, to take the difference between the readings from two electrodes, decreasing the impact of the common mode noise caused by head muscles. For the prosthetic arm hardware, I based my design off of the inMoov2 prosthetic, with some adjustments made to increase the space for servo motors, allowing for each phalange(finger bone) to be controlled independently, increasing the functionality of the prosthetic.
