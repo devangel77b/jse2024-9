@@ -1,19 +1,19 @@
 ﻿\documentclass[12pt,conference,onecolumn]{IEEEtran}
 
-\title{FOREX trading algorithm}
+\title{Refining intraday futures strategy through {ICT} concepts: a real-time trading performance analysis}
 \author{%
-\IEEEauthorblockN{Nathan Gershteyn}\IEEEauthorblockA{Science \& Engineering\\Manalapan High School\\Englishtown, NJ\\425ngershteyn@frhsd.com} \and 
+\IEEEauthorblockN{Justin Hammer}\IEEEauthorblockA{Science \& Engineering\\Manalapan High School\\Englishtown, NJ\\425jhammer@frhsd.com} \and 
 \IEEEauthorblockN{Nirvik Patel}\IEEEauthorblockA{Science \& Engineering\\Manalapan High School\\Englishtown, NJ\\425npatel@frhsd.com}}
 \date{January 28, 2025}
 
-\newcommand{\keywords}{foreign exchange, FOREX, trading, algorithm, currency, news, sentiment analysis, XGBoost, gradient boost, moving average, relative strength index, volatility metrics, optimization}
+\newcommand{\keywords}{futures trading, ICT concepts, fair value gap, FVG, liquidity sweep, market structure, breaker block, trading psychology, day trading strategy, risk management, E-mini S\&P 500 (ES), intraday analysis}
 
 \usepackage{hyperref}
 \makeatletter
 \AtBeginDocument{
 \hypersetup{%
 pdftitle={\@title},
-pdfauthor={Nathan Gershteyn and Nirvik Patel},
+pdfauthor={Justin Hammer and Nirvik Patel},
 pdfkeywords={\keywords}}}
 \makeatother
 
@@ -21,7 +21,7 @@ pdfkeywords={\keywords}}}
 \maketitle 
 
 \begin{abstract}
-Our project is to develop an advanced automated foreign exchange trading system that uses machine learning and sentiment analysis to predict currency movements and execute profitable trades. We combined historical market data with real-time sentiment extracted from global news to provide a framework for making data-driven trading decisions. The core of the model is built using XGBoost, a gradient boosting algorithm, optimized to minimize losing trades while also reducing missed opportunities. Key features of the project include integrating advanced technical indicators such as moving averages, relative strength index, and volatility metrics, along with sentiment scores derived from news analysis. A phased exit strategy and decision matrix for trade signals ensure that trades are optimized to maximize profitability with constantly changing market conditions.
+This project documents the ongoing development and refinement of a live intraday futures trading strategy, primarily focused on the E-mini S\&P 500 (ES) contract. Utilizing core principles from Inner Circle Trader (ICT) methodology—including Fair Value Gaps (FVGs), liquidity sweeps, breaker blocks, and higher timeframe market structure—the strategy aims to capitalize on high-probability trade setups during key market sessions. Over the course of February to May 2025, we implemented structured execution protocols, strict session filters, and continuous journaling to improve consistency and reduce impulsive behavior. Performance metrics showed an overall net gain with reduced drawdowns and an enhanced risk-reward profile. This iterative process highlights the importance of disciplined decision-making, contextual market understanding, and systematic journaling in the evolution of a professional trading strategy.
 \end{abstract}
 
 \begin{IEEEkeywords}

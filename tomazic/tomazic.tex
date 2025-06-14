@@ -1,0 +1,32 @@
+\documentclass[12pt,conference,onecolumn]{IEEEtran}
+
+\title{Naval architecture and hull design}
+\author{%
+\IEEEauthorblockN{Kevin Tomazic}\IEEEauthorblockA{Science \& Engineering\\Manalapan High School\\Englishtown, NJ\\425ktomazic@frhsd.com}}
+\date{June 16, 2025}
+
+\newcommand{\keywords}{naval architecture, CAD, computer aided design, Fusion 360, hull design, stability, buoyancy, resistance and powering, sailboat, sailbot, autonomous sailbot, 3D printing, additive manufacturing}
+
+\usepackage{hyperref}
+\makeatletter
+\AtBeginDocument{
+\hypersetup{%
+pdftitle={\@title},
+pdfauthor={Kevin Tomazic},
+pdfkeywords={\keywords}}}
+\makeatother
+
+\usepackage{siunitx}
+
+\begin{document}
+\maketitle 
+
+\begin{abstract}
+Naval architecture is the study of ship design, focusing on overall balanced design considering the functional requirements, with special focus on the hull, including buoyancy; centers, moments, and stability; structural integrity; resistance and powering, etc. I examined the design of a small \qty{1}{\meter} LOA hull intended for a model or autonomous sailing craft. To design the hull and obtain volumes and centers for stability calculations, I used Autodesk Fusion. To physically construct the hull, I used additive manufacturing (3D printing), using several hull sections in order to satisfy manufacturability constraints due to bed length of the tooling.
+\end{abstract}
+
+\begin{IEEEkeywords}
+\keywords
+\end{IEEEkeywords}
+
+\end{document}

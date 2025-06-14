@@ -1,25 +1,28 @@
 \documentclass[12pt,conference,onecolumn]{IEEEtran}
 
-\title{Automatic malware detection given changes to file systems}
-\author{\IEEEauthorblockN{Saketh Ayyagari}\IEEEauthorblockA{Science \& Engineering\\Manalapan High School\\Englishtown, NJ\\425sayyagari@frhsd.com}\and\IEEEauthorblockN{Sanath Kumar}\IEEEauthorblockA{Commvault\\Tinton Falls, NJ\\skumar@commvault.com}}
-\date{January 28, 2025}
+\title{Implementing {S}imultaneous {L}ocalization and {M}apping ({SLAM}) onto a mobile robot}
+\author{\IEEEauthorblockN{Saketh Ayyagari}\IEEEauthorblockA{Science \& Engineering\\Manalapan High School\\Englishtown, NJ\\425sayyagari@frhsd.com}}
+\date{June 16, 2025}
 
-\newcommand{\keywords}{malware detection, SQL, intenship, Commvault, directory metadata, traffic analysis, deviations, anomalies}
+\newcommand{\keywords}{localization, mapping, SLAM, robot, ROS2, mobile robot, Gazebo, IMU, wheel encoders, LIDAR}
 
 \usepackage{hyperref}
 \makeatletter
 \AtBeginDocument{
 \hypersetup{%
 pdftitle={\@title},
-pdfauthor={Saketh Ayyagari and Sanath Kumar},
+pdfauthor={Saketh Ayyagari},
 pdfkeywords={\keywords}}}
 \makeatother
+
+
+\usepackage{siunitx}
 
 \begin{document}
 \maketitle 
 
 \begin{abstract}
-When malware gains access to an operating system, it can detrimentally affect it by altering a user's files in different directories. By monitoring whether the number of changes that occur in a specific time interval deviate from user patterns, one can infer the presence of a potential anomaly or piece of malware, prompting a user to take action against it. To automate this detection process, timestamps of directory metadata were collected in a specific time interval and compiled into a Structured Query Language (SQL) database. Once collected, the database is analyzed by an anomaly detection script, which utilizes a statistical model to return potential anomalies by detecting deviations from regular user patterns. Once these potential anomalies are flagged, they are compared with other timestamps to ensure those flagged are neither caused by user or regularly-scheduled patterns. 
+A common problem in autonomous navigation of robots is the ability to both map and consistently know its location in an unknown environment, more commonly known as the Simultaneous Localization and Mapping (SLAM) problem. Localization is a robot's ability to estimate its position and orientation with respect to the world given a predetermined map of an environment, and mapping is its ability to construct an accurate map, assuming it knows its pose (position and orientation). This semester, I focused on implementing a SLAM algorithm in both a simulated and a physical environment. I first implemented the algorithm within Gazebo, a robotic simulation environment, on a similar model of the robot I intended to build. Afterwards, I built the robot and equipped it with a \ang{360} LiDAR for mapping and an Inertial Measurement Unit (IMU)/wheel encoders for localization. The physical robot was powered with a Raspberry Pi 4B and programmed using Python and the Robot Operating System 2 (ROS2) framework, which contains different algorithms and packages for robotics and data processing. 
 \end{abstract}
 
 \begin{IEEEkeywords}

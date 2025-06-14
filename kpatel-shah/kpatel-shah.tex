@@ -1,19 +1,19 @@
 ﻿\documentclass[12pt,conference,onecolumn]{IEEEtran}
 
-\title{Anomaly detection in Windows Registry hives using machine learning}
+\title{SimuMine: A Web-Based Bitcoin Mining Efficiency Simulator}
 \author{%
-\IEEEauthorblockN{Krish Patel}\IEEEauthorblockA{Science \& Engineering\\Manalapan High School\\Englishtown, NJ\\425kpatel@frhsd.com}\and
-\IEEEauthorblockN{Jitin Jindal}\IEEEauthorblockA{Commvault\\Tinton Falls, NJ\\jjindal@commvault.com}}
-\date{January 28, 2025}
+\IEEEauthorblockN{Krish Shah}\IEEEauthorblockA{Science \& Engineering\\Manalapan High School\\Englishtown, NJ\\425kshah@frhsd.com}\and
+\IEEEauthorblockN{Krish Patel}\IEEEauthorblockA{Science \& Engineering\\Manalapan High School\\Englishtown, NJ\\425kpatel@frhsd.com}}
+\date{June 16, 2025}
 
-\newcommand{\keywords}{malware detection, Windows Registry hives, anomaly detection, metadata, Commvault, internship}
+\newcommand{\keywords}{bitcoin mining, SHA-256, energy efficiency, ASIC simulation}
 
 \usepackage{hyperref}
 \makeatletter
 \AtBeginDocument{
 \hypersetup{%
 pdftitle={\@title},
-pdfauthor={Krish Patel and Jitin Jindal},
+pdfauthor={Krish Shah and Krish Patel},
 pdfkeywords={\keywords}}}
 \makeatother
 
@@ -21,7 +21,7 @@ pdfkeywords={\keywords}}}
 \maketitle 
 
 \begin{abstract}
-The importance of malware detection software has increased dramatically with the rise of electronic data sharing and the spread of data theft. During my internship at Commvault, an industry leader in data security and management, I created an algorithm for monitoring Windows Registry hives. The registry serves as a critical database for settings, application preferences, and system parameters, making it a frequent target of malware and malicious activities. By analyzing key-value pairs, structural relationships, and timed patterns within real-world activity on Commvault servers, I established a baseline of normal activity to detect deviations. The system integrates supervised learning models trained on labeled datasets to identify specific types of anomalies, such as trojan horses and worms. Furthermore, the model incorporates real-time logging and notifications to alert the user of potential threats. When run on a simulation of registry tampering and unauthorized key deletions, it achieves an $F_1$ score of 0.91, which highlights the capability of the system to detect subtle anomalies while minimizing false positives, equipping systems to address emerging threats preemptively.
+Bitcoin mining is highly energy-intensive, and improving its efficiency is critical for both economic and environmental sustainability. This project presents a web-based simulation tool that models key aspects of Bitcoin mining, including the SHA-256 hashing algorithm, nonce iteration, and target difficulty checks. The computational backend is integrated with real-time power and thermal models, enabling the simulator to reflect how hash rate influences energy consumption and temperature. Interactive controls for frequency, voltage, and resistance, along with graphical visualizations of power usage over time, allow users to explore trade-offs between energy efficiency and mining performance. The simulation also includes a financial trade-off analysis feature and supports extended runtime testing to evaluate long-term behavior under varying operational conditions.
 \end{abstract}
 
 \begin{IEEEkeywords}

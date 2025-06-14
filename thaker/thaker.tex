@@ -1,11 +1,11 @@
 \documentclass[12pt,conference,onecolumn]{IEEEtran}
 
-\title{Computational solver for studying kingfisher dive dynamics }
+\title{A purely {P}ython computational origami library for scientific studies}
 \author{%
 \IEEEauthorblockN{Pooja Thaker}\IEEEauthorblockA{Science \& Engineering\\Manalapan High School\\Englishtown, NJ\\425pthaker@frhsd.com}}
-\date{January 28. 2025}
+\date{June 16. 2025}
 
-\newcommand{\keywords}{kingfisher, Alcedinidae, biomechanics, computational fluid dynamics, plunge diving, ANSYS, immersed boundary, IBAMR, IB2d, volume-of-fluid, VOF, overset grid}
+\newcommand{\keywords}{computational origami, languages, mesh, FOLD format, fold, rabbit ear, pyori, svg, graph, traversal, crease pattern}
 
 \usepackage{hyperref}
 \makeatletter
@@ -20,10 +20,9 @@ pdfkeywords={\keywords}}}
 \maketitle 
 
 \begin{abstract}
-My research investigates the fluid-structure interactions during kingfisher dives using computational  simulations to understand better how they avoid injury. Many species of kingfishers (family Alcedinidae) are plunge-diving birds that dive at high speeds, involving a significant impact against the water free surface, potentially with sufficient force to cause concussions in humans. The behavior appears to have arisen multiple times within the clade. In birds, previous research has examined plunge diving hydrodynamics in gannets (Sulidae), as well as head impacts in woodpeckers (Picidae); however, recent work in kingfishers solely addressed genetic signatures of convergent evolution while neglecting the biomechanics. To address the biomechanics during plunge diving in kingfishers, I focused on computational fluid dynamics (CFD) methods, namely, immersed boundary and overset grid methods. 
+Origami, traditionally an artistic endeavor, has evolved into a significant area of study within scientific concentrations such as genomics, materials science, and structural engineering. Computational tools like Rabbit Ear have facilitated the exploration of origami's mathematical properties; however, their utility in scientific research is limited due to their focus on creative coding and reliance on the JavaScript ecosystem. My research introduces PyOri, a novel Python library designed to bridge this gap by adapting the principles of computational origami for scientific studies. Developed as a pure Python package, PyOri ensures compatibility with a wide range of scientific computing environments and is available for installation via PyPI \& pip. The library provides functionalities for modeling and visualizing origami structures, including graph-based crease pattern generation, conversion to SVG and FOLD formats, and interactive 3D visualization. By integrating with widely-used scientific Python libraries such as NumPy, SciPy, and PyTorch, PyOri offers a versatile platform for simulating and analyzing foldable structures in various scientific contexts.
 
-I initially attempted immersed boundary methods, which overlay a Lagrangian (solid) frame over an Eulerian (fluid) frame to simulate fluid-structure interactions between the bird, fluid, and free surface. Previous research contained little work on the immersed boundary method applied to free surfaces and two-phase flows on complex geometries as experienced when a bird plunge dives. As a result, I shifted to overset grid methods using ANSYS Fluent. In these methods, overlapping/overset grids for solid and fluid and interpolation between the two present an alternative to immersed boundary. ANSYS Fluent also supports the Volume of Fluid (VOF) model, a multiphase model that tracks the interface between fluids.  As a first foray into bio-fluid mechanics, my short-term goals included running 2D simulations of bird and other comparison shapes. My long-term goals include data visualization and physics analysis to compare added mass, drag, and other hydrodynamic forces, flow fields, and free-surface movements during the dive, to link shape and form to potentially selective biomechanical factors and the evolution of plunge diving within the kingfishers. 
-\end{abstract}
+PyOri employs the FOLD format, a mesh-based structure, to represent origami models, containing information on vertices, edges, faces, and interrelations. This format allows for detailed manipulation of origami structures, including the creation and traversal of crease pattern graphs. Users can convert these patterns into scalable vector graphics (SVG) and FOLD files for visualization purposes. The library supports interactive 3D visualization of origami at different stages of foldability, facilitating a comprehensive understanding of the folding process. Additionally, PyOri enables the creation of folds using foundational principles such as the Huzita–Justin axioms and includes functionality for conducting flat-foldability checks on crease pattern graphs. Future developments aim to incorporate advanced meshing techniques and mesh manipulation capabilities, further enhancing the library's applicability in scientific research. This work ultimately aims to bridge the gap between computational origami and scientific research, enabling the exploration of complex systems through the lens of foldable geometries and is published for use on pip \& PyPI.\end{abstract}
 
 \begin{IEEEkeywords}
 \keywords
