@@ -1,10 +1,10 @@
 ﻿\documentclass[12pt,conference,onecolumn]{IEEEtran}
 
-\title{The Bridges of Monmouth County: Monmouth County Engineering internship}
+\title{Towards neural control of a prosthetic arm}
 \author{\IEEEauthorblockN{Vikram Choudhury}\IEEEauthorblockA{Science \& Engineering\\Manalapan High School\\Englishtown, NJ\\425vchoudhury@frhsd.com}}
-\date{January 28, 2025}
+\date{June 16, 2025}
 
-\newcommand{\keywords}{Bridges of Monmouth County, bridge, traffic safety, Monmouth County Engineering, civil engineer, professional engineer, engineer-in-training, EIT, PE, structural engineering, internship}
+\newcommand{\keywords}{electroencephalography, EEG, fast Fourier transform, FFT, neural control, prosthetic}
 
 \usepackage{hyperref}
 \makeatletter
@@ -14,13 +14,13 @@ pdftitle={\@title},
 pdfauthor={Vikram Choudhury},
 pdfkeywords={\keywords}}}
 \makeatother
+\usepackage{siunitx}
 
 \begin{document}
 \maketitle 
 
 \begin{abstract}
-I worked with the bridge and traffic safety department of Monmouth County Engineering. My primary goal was to learn more about county engineering and surveying. I worked on several bridges, taking quantity take-offs (cost estimates), analyzing topography changes (how much the bridge elevation has changed in the past few years), and creating sketches for important elements of certain bridges in an effort to learn more about governmental civil engineering and bridge creation and maintenance.
-\end{abstract}
+I prototyped an inexpensive prosthetic arm that is able to be controlled in a straightforward manner using electroencephalography (EEG), which is a method to measure electrical activity in the brain. EEG signals contain information related to motor function as well as information related to other actions that the brain is responsible for. As motor function signals are predominantly found in the \qtyrange{12}{100}{\hertz} range, I applied a digital filter to the EEG signal, using a Fourier transform that ignores all parts of the signal outside of the \qtyrange{12}{100}{\hertz} passband. EEG signals are also very sensitive to noise, disruptions to a signal, caused by motor function of head muscles. For two electrodes in close proximity, the noise induced by the motor function of head muscles would be similar, so  I used an instrumentation amplifier, a type of amplifier that subtracts two input signals, to take the difference between the readings from two electrodes, decreasing the impact of the common mode noise caused by head muscles. For the prosthetic arm hardware, I based my design off of the inMoov2 prosthetic, with some adjustments made to increase the space for servo motors, allowing for each phalange (finger bone) to be controlled independently, increasing the functionality of the prosthetic.\end{abstract}
 
 \begin{IEEEkeywords}
 \keywords

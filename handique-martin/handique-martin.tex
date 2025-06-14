@@ -1,19 +1,19 @@
 ﻿\documentclass[12pt,conference,onecolumn]{IEEEtran}
 
-\title{Algorithms for analyzing risk of aneurysms}
+\title{Automatic detection of microexpressions using an image classification model}
 \author{%
 \IEEEauthorblockN{Eshan Handique}\IEEEauthorblockA{Science \& Engineering\\Manalapan High School\\Englishtown, NJ\\425ehandique@frhsd.com} \and 
-\IEEEauthorblockN{Justin Hammer}\IEEEauthorblockA{Science \& Engineering\\Manalapan High School\\Englishtown, NJ\\425jhammer@frhsd.com}}
+\IEEEauthorblockN{Nathan Martin}\IEEEauthorblockA{Science \& Engineering\\Manalapan High School\\Englishtown, NJ\\425nmartin@frhsd.com}}
 \date{January 28, 2025}
 
-\newcommand{\keywords}{aneurysm, risk factor analysis, detection, SQL}
+\newcommand{\keywords}{polygraph, lie detection, microexpressions, image classification}
 
 \usepackage{hyperref}
 \makeatletter
 \AtBeginDocument{
 \hypersetup{%
 pdftitle={\@title},
-pdfauthor={Eshan Handique and Justin Hammer},
+pdfauthor={Eshan Handique and Nathan Martin},
 pdfkeywords={\keywords}}}
 \makeatother
 
@@ -21,7 +21,7 @@ pdfkeywords={\keywords}}}
 \maketitle 
 
 \begin{abstract}
-Aneurysms are bulges in the blood vessel wall. If they rupture and break, they can cause many harmful effects and even lead to death. The primary causes of aneurysms include high blood pressure, high cholesterol, and genetic disorders. Still, one can never predict the growth of an aneurysm until it has already manifested in the body. There are currently ways to image an aneurysm within a body to confirm the presence of one, but there is no way to predict outright whether or not someone will grow an aneurysm. First, we simulated an aneurysm in real life to learn about the main factors contributing to an aneurysm's growth. We aim to create a program that would analyze whether or not the user is at risk of developing an aneurysm in the future. This will be done by taking different metrics from a database of aneurysm patients and comparing them to data from the user, discerning whether or not the user’s data correlates with the patients. At this moment, the SQL query and database are complete but the comparison program is still in the works.
+Polygraph tests determine if someone is lying by comparing differences in their biometric data with their responses to a set of questions. However, this method of lie detection is not very effective and is open to misuse for intimidation and abuse. Because of this, we aimed to create a new functional form of lie detection. This was done by analyzing one’s microexpressions: the uncontrollable expressions that appear on someone’s face for a short amount of time, expressing their true feelings. These microexpressions are thought to give a more truthful indication of the emotional state of the subject. We used an image classification model to automatically detect microexpressions on someone's face in a live feed, allowing us to decide whether or not they are lying based on their answer in relation to their microexpressions. We will continue to refine the model to try to get the lie detector as accurate as possible in the future.
 \end{abstract}
 
 \begin{IEEEkeywords}
